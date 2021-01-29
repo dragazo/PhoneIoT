@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div id='info-you-share' class='content'>
+    {% include title.html text='Information you share' %}
+
+    <p>
+        The data we use is potentially all the sensors on your device, including (if present and enabled) location, accelerometer, compass, etc.
+        Additionally, we also access the microphone and the camera.
+        For the microphone, we only share the volume level, meaning no one can eavesdrop on you through PhoneIoT.
+        For the camera, only still-shot images taken with the PhoneIoT app are accessible, and you must explicitly request (and accept) any new images you take (no one can remotely take a picture from your camera without your permission).
+        We do not collect any of your data; it is used while the app is running for access by NetsBlox and any connected clients, but we do not store any of your sensor or image/sound data long-term.
+    </p>
+</div>
+<div class='content'>
+    {% include title.html text='Who can access your information' %}
+
+    <p>
+        Upon starting the app, a random password is generated and displayed at the top of the screen.
+        One the device is connected to the NetsBlox server, this password can be used to access any of the <a href='#info-you-share'>information you share</a>.
+        The app will never natively transmit your password, so you are in control of who has access to your data.
+        For added security, the app disallows any data requests made while the app is in the background or the screen is off.
+        Additionally, the password expires after one hour, meaning even if your password were compromised it will resecure itself automatically.
+    </p>
+</div>
